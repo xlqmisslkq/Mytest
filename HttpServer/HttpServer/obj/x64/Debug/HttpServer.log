@@ -1,0 +1,117 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.88.130”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.c
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(12,3): warning : implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(12,3): warning :    12 |   exit(0);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(12,3): warning :       |   ^~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(12,3): warning : incompatible implicit declaration of built-in function ‘exit’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(3,1): message : include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(3,1): message :     2 | #include "server.h"
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(3,1): message :   +++ |+#include <stdlib.h>
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(3,1): message :     3 |
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(16,2): warning : implicit declaration of function ‘chdir’ [-Wimplicit-function-declaration]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(16,2): warning :    16 |  chdir(argv[2]);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(16,2): warning :       |  ^~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(18,24): warning : implicit declaration of function ‘atoi’ [-Wimplicit-function-declaration]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(18,24): warning :    18 |  unsigned short port = atoi(argv[1]);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(18,24): warning :       |                        ^~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\main.c(18,24): warning : conversion from ‘int’ to ‘short unsigned int’ may change value [-Wconversion]
+  server.c
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(96,15): warning : implicit declaration of function ‘acceptConn’; did you mean ‘acceptconn’? [-Wimplicit-function-declaration]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(96,15): warning :    96 |     int ret = acceptConn(lfd, epfd);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(96,15): warning :       |               ^~~~~~~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(96,15): warning :       |               acceptconn
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(100,10): warning : unused variable ‘flag’ [-Wunused-variable]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(100,10): warning :   100 |      int flag = 1;
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(100,10): warning :       |          ^~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(108,5): warning : implicit declaration of function ‘recvHttpRequest’; did you mean ‘revHttpRequest’? [-Wimplicit-function-declaration]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(108,5): warning :   108 |     recvHttpRequest(curfd, epfd);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(108,5): warning :       |     ^~~~~~~~~~~~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(108,5): warning :       |     revHttpRequest
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(156,16): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(156,16): warning :   156 |  while ((len = recv(cfd, tmp, sizeof(tmp), 0)) > 0)
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(156,16): warning :       |                ^~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(161,4): warning : implicit declaration of function ‘memcpy’ [-Wimplicit-function-declaration]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(161,4): warning :   161 |    memcpy(buf + total, tmp, len);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(161,4): warning :       |    ^~~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(161,4): warning : incompatible implicit declaration of built-in function ‘memcpy’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(12,1): message : include ‘<string.h>’ or provide a declaration of ‘memcpy’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(12,1): message :    11 | #include <pthread.h>
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(12,1): message :   +++ |+#include <string.h>
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(12,1): message :    12 |
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(161,29): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(161,29): warning :   161 |    memcpy(buf + total, tmp, len);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(161,29): warning :       |                             ^~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(174,14): warning : implicit declaration of function ‘strstr’ [-Wimplicit-function-declaration]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(174,14): warning :   174 |   char* pt = strstr(buf, "\r\n");
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(174,14): warning :       |              ^~~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(174,14): warning : incompatible implicit declaration of built-in function ‘strstr’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(174,14): message : include ‘<string.h>’ or provide a declaration of ‘strstr’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(176,16): warning : conversion from ‘long int’ to ‘int’ may change value [-Wconversion]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(176,16): warning :   176 |   int reqlen = pt - buf;
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(176,16): warning :       |                ^~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(227,6): warning : implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(227,6): warning :   227 |  if (strcmp(path, "/") == 0)
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(227,6): warning :       |      ^~~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(269,52): warning : conversion from ‘__off_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(269,52): warning :   269 |   sendHeadMsg(cfd, 200, "OK", getFileType(file), st.st_size);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(269,52): warning :       |                                                  ~~^~~~~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(292,16): warning : implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(292,16): warning : incompatible implicit declaration of built-in function ‘strlen’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(292,16): message : include ‘<string.h>’ or provide a declaration of ‘strlen’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(314,13): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(314,13): warning :   314 |   int len = read(fd, buf, sizeof(buf));
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(314,13): warning :       |             ^~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(318,19): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(318,19): warning :   318 |    send(cfd, buf, len, 0);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(318,19): warning :       |                   ^~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(374,18): warning : incompatible implicit declaration of built-in function ‘strlen’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(374,18): warning :   374 |    sprintf(buf + strlen(buf),
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(374,18): warning :       |                  ^~~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(374,18): message : include ‘<string.h>’ or provide a declaration of ‘strlen’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(380,18): warning : incompatible implicit declaration of built-in function ‘strlen’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(380,18): warning :   380 |    sprintf(buf + strlen(buf),
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(380,18): warning :       |                  ^~~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(380,18): message : include ‘<string.h>’ or provide a declaration of ‘strlen’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(386,18): warning : incompatible implicit declaration of built-in function ‘strlen’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(386,18): warning :   386 |   send(cfd, buf, strlen(buf), 0);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(386,18): warning :       |                  ^~~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(386,18): message : include ‘<string.h>’ or provide a declaration of ‘strlen’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(388,3): warning : implicit declaration of function ‘memset’ [-Wimplicit-function-declaration]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(388,3): warning :   388 |   memset(buf, 0, sizeof(buf));
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(388,3): warning :       |   ^~~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(388,3): warning : incompatible implicit declaration of built-in function ‘memset’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(388,3): message : include ‘<string.h>’ or provide a declaration of ‘memset’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(390,3): warning : implicit declaration of function ‘free’ [-Wimplicit-function-declaration]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(390,3): warning :   390 |   free(namelist[i]);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(390,3): warning :       |   ^~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(390,3): warning : incompatible implicit declaration of built-in function ‘free’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(12,1): message : include ‘<stdlib.h>’ or provide a declaration of ‘free’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(12,1): message :    11 | #include <pthread.h>
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(12,1): message :   +++ |+#include <stdlib.h>
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(12,1): message :    12 |
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(394,17): warning : incompatible implicit declaration of built-in function ‘strlen’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(394,17): warning :   394 |  send(cfd, buf, strlen(buf), 0);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(394,17): warning :       |                 ^~~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(394,17): message : include ‘<string.h>’ or provide a declaration of ‘strlen’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(396,2): warning : incompatible implicit declaration of built-in function ‘free’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(396,2): warning :   396 |  free(namelist);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(396,2): warning :       |  ^~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(396,2): message : include ‘<stdlib.h>’ or provide a declaration of ‘free’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(422,20): warning : implicit declaration of function ‘strrchr’ [-Wimplicit-function-declaration]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(422,20): warning :   422 |  const char* dot = strrchr(name, '.');
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(422,20): warning :       |                    ^~~~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(422,20): warning : incompatible implicit declaration of built-in function ‘strrchr’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(422,20): message : include ‘<string.h>’ or provide a declaration of ‘strrchr’
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(481,25): warning : implicit declaration of function ‘isxdigit’ [-Wimplicit-function-declaration]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(481,25): warning :   481 |   if (from[0] == '%' && isxdigit(from[1]) && isxdigit(from[2]))
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(481,25): warning :       |                         ^~~~~~~~
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(485,10): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(485,10): warning :   485 |    *to = hexit(from[1]) * 16 + hexit(from[2]);
+D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\server.c(485,10): warning :       |          ^~~~~
+  正在链接对象
+  HttpServer.vcxproj -> D:\Desktop\itheima\笔记\阶段4 Linux网络编程案例\code\HttpServer\HttpServer\bin\x64\Debug\HttpServer.out
